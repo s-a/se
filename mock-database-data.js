@@ -12,7 +12,7 @@ async function mockData() {
 		const stockAvailable = Math.floor(Math.random() * 10) + 1
 		const product = {
 			id: i,
-			product_id: id,
+			product_id: id.toString(),
 			product_name: `mocked product ${id}`,
 			stock_available: stockAvailable,
 			created_at: dt,

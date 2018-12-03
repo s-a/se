@@ -25,3 +25,7 @@ To generate mocked data containing the products run `node mock-database-data.js`
 ## Task 4
 
 - `http://localhost:9999/products` returns a product list.
+
+## Task 5
+
+- `http://localhost:9999/verify-order` returns `JSON` object in form of `{valid: true}` by passing `product_id` and `quantity` as post parameters.
