@@ -6,7 +6,7 @@ To install the server and development dependencies run `npm i`.
 
 ## Unit tests and code coverage
 
-To run the unit tests and code coverage run `npm test`. The coverage report creates an HTML file at `coverage/index.html`
+To run the unit tests and code coverage run `npm test`. The coverage report creates an HTML file at `coverage/index.html`. This depends on `Task 3: Mock data generator`
 
 ## Task 1
 
@@ -22,3 +22,6 @@ To run the unit tests and code coverage run `npm test`. The coverage report crea
 
 To generate mocked data containing the products run `node mock-database-data.js`.
 
+## Task 4
+
+- `http://localhost:9999/products` returns a product list.
