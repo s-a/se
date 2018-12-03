@@ -22,6 +22,13 @@ async function mockData() {
 			collectionName: 'products',
 			document: product
 		})
+
+		const scopeCollection = server.storage.db.collection('products')
+		await scopeCollection.ensureIndex({
+			product_id: 1
+		}, {
+			unique: true
+		})
 	}
 
 	server.http.log.info('mocking products collection done')
