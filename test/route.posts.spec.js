@@ -1,6 +1,6 @@
 require('should')
 
-describe.only('#/posts', function () {
+describe('#/posts', function () {
 	it('should get posts sorted by given property asc', async function () {
 		const res = await HTTP().get('/posts/?sortOrderProperty=title')
 		res.data.length.should.be.above(0)

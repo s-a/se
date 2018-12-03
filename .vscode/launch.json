@@ -8,13 +8,20 @@
     "request": "launch",
     "name": "Launch Program",
     "outputCapture": "std",
-    "program": "${workspaceFolder}//lib//index.js"
+    "program": "${workspaceFolder}/lib/index.js"
   }, {
     "type": "node",
     "request": "launch",
     "name": "Mocha Tests",
     "outputCapture": "std",
     "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+    "internalConsoleOptions": "openOnSessionStart"
+  }, {
+    "type": "node",
+    "request": "launch",
+    "name": "Mock data",
+    "outputCapture": "std",
+    "program": "${workspaceFolder}/mock-database-data.js",
     "internalConsoleOptions": "openOnSessionStart"
   }]
 }
