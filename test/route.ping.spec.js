@@ -1,8 +1,9 @@
 require('should')
 
 describe('#/ping', function () {
-	it('should get signs of life and service information', async function () {
+	it('should get server date time', async function () {
 		const res = await HTTP().get('/ping')
-		res.data.responseText.should.equal('Hello World')
+		const date = (new Date()).toISOString().split('T')[0]
+		res.data.split('T')[0].should.equal(date)
 	})
 })
